@@ -20,10 +20,10 @@ const app = new Vue({
         for (let i = 1; i <= 10; i++) {
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then(function (response) {
-                    //console.log(self);
-                    //console.log(response);
+                    console.log(self);
+                    console.log(response);
                     self.emails.push(response.data.response)
-                    //bonus
+                    
                     self.data = response.data
                 })
         }
